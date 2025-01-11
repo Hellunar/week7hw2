@@ -1,4 +1,28 @@
 footer {
   display: grid;
   background-color: #384353;
+  .nav {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .ending {
+    display: grid;
+    justify-items: center;
+  }
+  ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo {
+    img {
+      width: 343px;
+      height: 55.58px;
+    }
+  }
 }

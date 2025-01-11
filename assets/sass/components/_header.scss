@@ -1,6 +1,44 @@
 header {
   display: grid;
-  grid-row: 1 / 6;
-  grid-column: 1 / 2;
+  height: 737px;
   background-image: url("../img/header/Rectangle1.png");
+  background-size: cover;
+  nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 16px 72px 16px 72px;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  h1 {
+    font-family: Reckless Neue;
+    font-weight: 400;
+    font-size: 96px;
+    color: rgb(252, 253, 253);
+  }
+}
+@media (max-width: 700px) {
+  header {
+    display: grid;
+    height: 737px;
+    background-image: url("../img/header/Rectangle1.png");
+    background-position: center;
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+      padding: 16px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 42px;
+    }
+  }
 }
